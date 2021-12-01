@@ -21,7 +21,7 @@ public class Register extends Application {
 
         stage.setTitle("CS3318 A03");
         gp = build();
-        addUI(gp);
+        makeUI(gp);
         scene = new Scene(gp, 800, 500);
         stage.setScene(scene);
         stage.show();
@@ -46,7 +46,7 @@ public class Register extends Application {
         return gp;
     }
 
-    private void addUI(GridPane gp) {
+    private void makeUI(GridPane gp) {
         Label head;
         Label email;
         TextField emailBox;
@@ -57,7 +57,7 @@ public class Register extends Application {
         head = new Label("REGISTER.");
         head.setFont(Font.font("Helvetica", FontWeight.EXTRA_BOLD, 24));
         gp.add(head, 0,0,6,1);
-        gp.setMargin(head, new Insets(20, 0,35,0));
+        gp.setMargin(head, new Insets(25, 0,35,0));
         gp.setHalignment(head, center);
 
         email = new Label("Email  ");
